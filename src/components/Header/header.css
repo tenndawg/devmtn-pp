@@ -1,6 +1,7 @@
 nav {
-    height: 80px;
+    padding: 1em;
     background-color: rgb(161, 161, 161);
+    overflow: hidden;
 }
 
 .menu {
@@ -21,17 +22,22 @@ nav {
     flex-grow: 1;
 }
 
+.siteName p {
+    font-size: xx-large;
+}
+
 .menuList {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    align-content: stretch;
+    align-content: center;
     flex-grow: 1;
 }
 
-.menuList h2 {
+.menuList p {
+    font-size: x-large;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -58,24 +64,26 @@ nav {
     width: 40px;
 }
 
+.navNarrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .navNarrow img {
-        cursor: pointer;
-        color: rgb(47, 12, 243);
-        height: 75px;
-        width: 75px;
-        display: block;
+    display: flex;    
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
 }
 
 .narrowLinks {
     display: none;
-    height: 200px;
-    width: 100%;
 }
 
 .narrowLinks a {
-    display: block;
-    float: left;
-    clear: left;
+    display: flex;
     padding: 0.5em 0;
     color: black;
 }

@@ -17,13 +17,13 @@ export default class Header extends Component {
             <nav>
                 <div className="menu">
                     <div className="siteName">
-                        <h1>TennDawg's Den</h1>
+                        <p><b>TennDawg's Den</b></p>
                     </div>
                     <div className="menuList">
-                        <h2>Menu 1</h2>
-                        <h2>Menu 2</h2>
-                        <h2>Menu 3</h2>
-                        <h2>Menu 4</h2>
+                        <p>Menu 1</p>
+                        <p>Menu 2</p>
+                        <p>Menu 3</p>
+                        <p>Menu 4</p>
                     </div>
                     <div className="icons">
                         <img src={require("../../img/searchicon.png")} alt="search"/>
