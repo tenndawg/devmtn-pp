@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <div>
-          <img src={require("./img/maingamepic.png")} alt="Video Game Picture" className="pic"/>
+        <div className="appImg">
+          <img src={require("./img/ppvgmain.jpg")} alt="Video Game Picture" className="pic"/>
         </div>
         <Sections/>
       </div>
