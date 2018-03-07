@@ -1,15 +1,21 @@
-.menu {
-    display: flex;
+nav {
     height: 80px;
     background-color: rgb(161, 161, 161);
+}
+
+.menu {
+    display: none;
+    height: 80px;
+    background-color: rgb(161, 161, 161);
+    overflow: hidden;
 }
 
 .siteName {
     display: flex;
     flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     align-content: stretch;
     padding: 1%;
     flex-grow: 1;
@@ -18,19 +24,19 @@
 .menuList {
     display: flex;
     flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     align-content: stretch;
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 .menuList h2 {
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     align-content: stretch;
     height: 40px;
     padding: 1%;
@@ -39,9 +45,9 @@
 .icons {
     display: flex;
     flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
     align-content: stretch;
     flex-grow: 1;
     padding: 1%;
@@ -52,4 +58,37 @@
     width: 40px;
 }
 
+.navNarrow img {
+        cursor: pointer;
+        color: rgb(47, 12, 243);
+        height: 75px;
+        width: 75px;
+        display: block;
+}
+
+.narrowLinks {
+    display: none;
+    height: 200px;
+    width: 100%;
+}
+
+.narrowLinks a {
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5em 0;
+    color: black;
+}
+
+/* Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links. */
+@media (min-width: 899px) {    
+        .menu {
+            display: flex;
+        }
+
+        .navNarrow {
+            display: none;
+        }
+}
 

@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div>
         <Header/>
+        <img src={require("./img/maingamepic.png")} className="pic"/>
       </div>
     );
   }
