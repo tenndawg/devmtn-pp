@@ -1,8 +1,19 @@
 nav {
-    padding: 1em;
+    /* padding: 1em; */
     background-color: rgb(180, 180, 180);
     overflow: hidden;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+nav p {
+    border: 1px solid rgb(139, 139, 139);
+    padding: 20px 10px 10px 10px;
+    background-color: rgb(139, 139, 139);
+}
+
+nav p:hover {
+    color: white;
 }
 
 .menu {
@@ -24,8 +35,8 @@ nav {
 }
 
 .siteName img {
-    height: 300px;
-    width: 350px;
+    height: 200px;
+    width: 200px;
 }
 
 .menuList {
@@ -36,6 +47,7 @@ nav {
     align-items: center;
     align-content: center;
     flex-grow: 1;
+    color: #000000;
 }
 
 .menuList p {
@@ -47,14 +59,14 @@ nav {
     align-items: center;
     align-content: stretch;
     height: 40px;
-    padding: 1%;
+    padding: 5px 10px;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     align-content: stretch;
     flex-grow: 1;
@@ -64,6 +76,7 @@ nav {
 .icons img {
     height: 40px;
     width: 40px;
+    padding: 5px 10px;
 }
 
 .navNarrow {
