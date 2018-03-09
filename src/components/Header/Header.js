@@ -17,7 +17,7 @@ export default class Header extends Component {
             <nav>
                 <div className="menu">
                     <div className="siteName">
-                        <p><b>TennDawg's Den</b></p>
+                        <img src={require("../../img/tenndawgsden.png")} alt="TennDawg's Den"/>
                     </div>
                     <div className="menuList">
                         <p>Menu 1</p>

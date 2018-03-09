@@ -9,7 +9,7 @@ class App extends Component {
       <div>
         <Header/>
         <div className="appImg">
-          <img src={require("./img/ppvgmain.jpg")} alt="Video Game Picture" className="pic"/>
+          <img src={require("./img/ppvgmain.jpg")} alt="Video Game" className="pic"/>
         </div>
         <Sections/>
       </div>
