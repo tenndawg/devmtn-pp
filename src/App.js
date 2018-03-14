@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import VGMain from './components/VGMain/VGMain';
+import VGMain from './components/VideoGames/VGMain/VGMain';
 import SportsMain from './components/Sports/SportsMain/SportsMain';
 
 class App extends Component {
