@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./allNews.css";
 import axios from 'axios';
+import xmljs from 'xml-js';
 // import newsapi from 'newsapi';
 
 export default class AllNews extends Component {
@@ -44,7 +45,9 @@ export default class AllNews extends Component {
     render() { 
         // if (this.state.requestFailed) return <p>Failed!</p>
         // if (!this.state.bomb) return <p>Loading...</p>
-        // var results = this.state.bomb.results;
+        // var convert = require('xml-js');
+        // var xml = this.state.bomb.results;
+        // var results = convert.xml2json(xml, {compact: true, spaces: 4});
         // var reviewItems = results.map((result) =>
         //     <li><div className="titles"><b>{result.review.name}</b></div><br/> <div className="description">{result.review.description}</div><br/></li>
         // );
