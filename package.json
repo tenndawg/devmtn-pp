@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.4",
+    "marquee3000": "^1.0.9",
     "newsapi": "^2.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

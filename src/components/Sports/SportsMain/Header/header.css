@@ -1,0 +1,176 @@
+nav {
+    /* padding: 1em; */
+    background-color: #4388CC;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav p {
+    /* border: 1px solid rgb(139, 139, 139); */
+    padding: 20px 10px 10px 10px;
+    background-color: #4388CC;
+}
+
+nav p:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    flex-grow: 1;
+    margin: 1%;
+}
+
+.navmid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 120px;
+    width: 100%;
+}
+
+.navbot {
+    display: flex;
+    background-color: #4388CC;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.navbot p {
+    padding: 20px 10px 10px 10px;
+    background-color: #4388CC;
+}
+
+.navbot p:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    flex-grow: 1;
+}
+
+.search img {
+    height: 40px;
+    width: 40px;
+    padding: 5px 10px;
+    margin: 0 2%;
+}
+
+.menu {
+    display: none;
+    height: 50px;
+    background-color: #4388CC;
+    overflow: visible;
+}
+
+.siteName {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    padding: 1%;
+    flex-grow: 1;
+}
+
+.siteName img {
+    height: 500px;
+    width: 500px;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    margin: 0 2%;
+    color: #000000;
+}
+
+.menuList p {
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    flex-grow: 1;
+    padding: 1%;
+}
+
+.icons img {
+    height: 40px;
+    width: 40px;
+    padding: 5px 10px;
+}
+
+.navNarrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navNarrow img {
+    display: flex;    
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.narrowLinks {
+    display: none;
+}
+
+.narrowLinks a {
+    display: flex;
+    padding: 0.5em 0;
+    color: black;
+}
+
+/* Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links. */
+@media (min-width: 899px) {    
+        .menu {
+            display: flex;
+        }
+
+        .navNarrow {
+            display: none;
+        }
+}
+
