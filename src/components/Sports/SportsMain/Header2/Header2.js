@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./header.css";
+import "./header2.css";
 
 export default class Header extends Component {
     
@@ -45,7 +45,7 @@ export default class Header extends Component {
                     </div>
                 <div className="navmid2">
                     <div className="siteName2">
-                        <img src={require("../../../../img/TennDawgs.jpg")} alt="TennDawg's Den"/>
+                        <img src={require("../../../../img/TennDawgs.png")} alt="TennDawg's Den"/>
                     </div>
                 </div>
                 <div className="navbot2">

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import Header from './Header/Header';
+import Header2 from './Header2/Header2';
 import NewsTicker from './NewsTicker/NewsTicker';
 
 export default class SportsMain extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                <Header2/>
             </div>
         )
     }
