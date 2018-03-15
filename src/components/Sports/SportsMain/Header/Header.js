@@ -22,7 +22,7 @@ export default class Header extends Component {
     }
 
     burgerToggle() {
-		let linksEl = document.querySelector('.narrowLinks');
+		let linksEl = document.querySelector('.narrowLinks2');
 		if (linksEl.style.display === 'block') {
 			linksEl.style.display = 'none';
 		} else {
@@ -33,38 +33,36 @@ export default class Header extends Component {
     render() {
         return(        
             <div>
-                <nav>
-                    <div className="menu">
-                        <div className="date">
+                    <div className="menu2">
+                        <div className="date2">
                             <p>Date Goes Here</p>
                         </div>
-                        <div className="icons">
+                        <div className="icons2">
                             <img src={require("../../../../img/twittericon.png")} alt="twitter"/>
                             <img src={require("../../../../img/facebookicon.png")} alt="facebook"/>
                             <img src={require("../../../../img/tumblricon.png")} alt="tumblr"/>
                         </div>
                     </div>
-                </nav>
-                <div className="navmid">
-                    <div className="siteName">
-                        <img src={require("../../../../img/tenndawgsden.png")} alt="TennDawg's Den"/>
+                <div className="navmid2">
+                    <div className="siteName2">
+                        <img src={require("../../../../img/TennDawgs.jpg")} alt="TennDawg's Den"/>
                     </div>
                 </div>
-                <div className="navbot">
-                    <div className="menuList">
+                <div className="navbot2">
+                    <div className="menuList2">
                         <p>Home</p>
                         <p>Menu 1</p>
                         <p>Menu 2</p>
                         <p>Menu 3</p>
                         <p>Menu 4</p>
                     </div>
-                    <div className="search">
+                    <div className="search2">
                     <img src={require("../../../../img/searchicon.png")} alt="search"/>
                     </div>
                 </div>
-                    <div className="navNarrow">
+                    <div className="navNarrow2">
                         <img src={require("../../../../img/burgermenu.png")} alt="menu" className="fa fa-bars fa-2x" onClick={this.burgerToggle}></img>
-                        <div className="narrowLinks">
+                        <div className="narrowLinks2">
                             <a href="http://google.com" onClick={this.burgerToggle}>Menu 1</a>
                             <a href="http://espn.com" onClick={this.burgerToggle}>Menu 2</a>
                             <a href="http://ign.com" onClick={this.burgerToggle}>Menu 3</a>

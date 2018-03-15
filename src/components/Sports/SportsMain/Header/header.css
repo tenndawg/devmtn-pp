@@ -1,22 +1,4 @@
-nav {
-    /* padding: 1em; */
-    background-color: #4388CC;
-    overflow: hidden;
-    width: 100%;
-}
-
-nav p {
-    /* border: 1px solid rgb(139, 139, 139); */
-    padding: 20px 10px 10px 10px;
-    background-color: #4388CC;
-}
-
-nav p:hover {
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-
-.date {
+.date2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -27,18 +9,19 @@ nav p:hover {
     margin: 1%;
 }
 
-.navmid {
+.navmid2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    height: 120px;
+    height: 150px;
     width: 100%;
+    overflow: hidden;
 }
 
-.navbot {
+.navbot2 {
     display: flex;
     background-color: #4388CC;
     overflow: hidden;
@@ -47,19 +30,19 @@ nav p:hover {
     height: 40px;
 }
 
-.navbot p {
+.navbot2 p {
     padding: 20px 10px 10px 10px;
     background-color: #4388CC;
     border: 1px solid #bbb;
     border-style: none solid;
 }
 
-.navbot p:hover {
+.navbot2 p:hover {
     color: white;
     background-color: rgb(0, 0, 0);
 }
 
-.search {
+.search2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -68,21 +51,21 @@ nav p:hover {
     flex-grow: 1;
 }
 
-.search img {
+.search2 img {
     height: 40px;
     width: 50px;
     padding: 5px 10px;
     margin: 0 2%;
 }
 
-.menu {
-    display: none;
+.menu2 {
+    display: flex;
     height: 50px;
     background-color: #4388CC;
     overflow: hidden;
 }
 
-.siteName {
+.siteName2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -93,12 +76,12 @@ nav p:hover {
     flex-grow: 1;
 }
 
-.siteName img {
-    height: 500px;
-    width: 500px;
+.siteName2 img {
+    height: 150px;
+    width: 230px;
 }
 
-.menuList {
+.menuList2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -111,7 +94,7 @@ nav p:hover {
     padding-top: 10px;
 }
 
-.menuList p {
+.menuList2 p {
     font-size: x-large;
     display: flex;
     flex-direction: row;
@@ -124,7 +107,7 @@ nav p:hover {
     /* padding: 5px 10px; */
 }
 
-.icons {
+.icons2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -135,31 +118,31 @@ nav p:hover {
     padding: 1%;
 }
 
-.icons img {
+.icons2 img {
     height: 50px;
     width: 60px;
     padding: 5px 10px;
 }
 
-.navNarrow {
+.navNarrow2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.navNarrow img {
+.navNarrow2 img {
     display: flex;    
     cursor: pointer;
     height: 50px;
     width: 50px;
 }
 
-.narrowLinks {
+.narrowLinks2 {
     display: none;
 }
 
-.narrowLinks a {
+.narrowLinks2 a {
     display: flex;
     padding: 0.5em 0;
     color: black;
@@ -168,11 +151,11 @@ nav p:hover {
 /* Adjust breakpoint as desired to select when the "hamburger" menu is
 replaced by just the links. */
 @media (min-width: 899px) {    
-        .menu {
+        .menu2 {
             display: flex;
         }
 
-        .navNarrow {
+        .navNarrow2 {
             display: none;
         }
 }
