@@ -7,7 +7,6 @@ export default class SportsMain extends Component {
         return (
             <div>
                 <Header/>
-                <NewsTicker/>
             </div>
         )
     }
