@@ -169,12 +169,14 @@ replaced by just the links. */
 
 input[type=text] {
     overflow: hidden;
+    height: 40px;
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     border-bottom-color: #4388CC;
+    border-top-color: #4388CC;
     background-color: white;
     background-image: url('https://w3schools.com/howto/searchicon.png');
     background-position: 10px 10px; 
