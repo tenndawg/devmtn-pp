@@ -3,22 +3,21 @@ import "./header2.css";
 
 export default class Header extends Component {
     
-    hoy() {
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
+    componentDidMount() {
+        var n =  new Date();
+        var y = n.getFullYear();
+        var m = n.getMonth() + 1;
+        var d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;   
+    }
 
-        if(dd<10) {
-            dd = '0'+dd
-        } 
-
-        if(mm<10) {
-            mm = '0'+mm
-        } 
-
-        today = mm + '/' + dd + '/' + yyyy;
-        return today;
+    searchToggle() {
+        var x = document.querySelector('.search2');
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
     }
 
     burgerToggle() {
@@ -35,7 +34,7 @@ export default class Header extends Component {
             <div>
                     <div className="menu2">
                         <div className="date2">
-                            <p>Date Goes Here</p>
+                            <p id="date"></p>
                         </div>
                         <div className="icons2">
                             <img src={require("../../../../img/twittericon.png")} alt="twitter"/>
@@ -57,7 +56,8 @@ export default class Header extends Component {
                         <p>Menu 4</p>
                     </div>
                     <div className="search2">
-                    <img src={require("../../../../img/searchicon.png")} alt="search"/>
+                        <input type="text" name="search" placeholder="Search..."/>                        
+                    {/* <img src={require("../../../../img/searchicon.png")} alt="search"  onclick={this.searchToggle}/> */}
                     </div>
                 </div>
                     <div className="navNarrow2">
