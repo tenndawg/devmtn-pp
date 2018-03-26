@@ -1,0 +1,29 @@
+.footMenu {
+    display: flex;
+    height: 50px;
+    background-color: rgb(180, 180, 180);
+    overflow: hidden;
+}
+
+.footSiteName {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    padding: 1%;
+    flex-grow: 1;
+    color: blue;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: center;
+    padding: 1%;
+    flex-grow: 1;
+}
