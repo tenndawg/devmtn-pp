@@ -54,10 +54,10 @@
     width: 30%;
     border-bottom: solid;
     border-bottom-color: #ccc;
-    border-bottom-width: .5px;
+    border-bottom-width: 1px;
     border-right: solid;
     border-right-color: #ccc;
-    border-right-width: .5px;
+    border-right-width: 1px;
     position: relative;
 }
 
@@ -86,10 +86,10 @@
     width: 30%;
     border-right: solid;
     border-right-color: #ccc;
-    border-right-width: .5px;
+    border-right-width: 1px;
     border-top: solid;
     border-top-color: #ccc;
-    border-top-width: .5px;
+    border-top-width: 1px;
     position: relative;
 }
 
@@ -118,10 +118,10 @@
     width: 30%;
     border-left: solid;
     border-left-color: #ccc;
-    border-left-width: .5px;
+    border-left-width: 1px;
     border-bottom: solid;
     border-bottom-color: #ccc;
-    border-bottom-width: .5px;
+    border-bottom-width: 1px;
     position: relative;
 }
 
@@ -150,10 +150,10 @@
     width: 30%;
     border-top: solid;
     border-top-color: #ccc;
-    border-top-width: .5px;
+    border-top-width: 1px;
     border-left: solid;
     border-left-color: #ccc;
-    border-left-width: .5px;
+    border-left-width: 1px;
     position: relative;
 }
 
