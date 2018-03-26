@@ -17,8 +17,8 @@
 
 .container p {
     position: absolute;
-    left: 0;
-    top: 25%;
+    right: 7%;
+    top: 35%;
     width: 100%;
     text-align: center;
     font-size: 3em;
