@@ -9,7 +9,7 @@ export default class Boxes extends Component {
                 <div className="boxesMain">
                     <div className="nfl">
                         <img src={require("../../../../img/nflbg.jpg")}/>
-                        {/* <p>NFL</p> */}
+                        <p>NFL</p>
                     </div>
                     <div className="quad1">
                         <img src={require("../../../../img/nbabg.jpg")}/>

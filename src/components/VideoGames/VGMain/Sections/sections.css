@@ -17,7 +17,7 @@
 
 .container p {
     position: absolute;
-    right: 7%;
+    left: 0;
     top: 35%;
     width: 100%;
     text-align: center;
@@ -27,5 +27,7 @@
 }
 
 .container {
+    display: flex;
+    justify-content: center;
     position: relative;
 }
