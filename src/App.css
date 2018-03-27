@@ -31,10 +31,10 @@
   height: 500px;
 }
 
-.newsreviews {
+.newsReviews {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
