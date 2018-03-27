@@ -26,7 +26,7 @@ export default class Header extends Component {
                         <p>Menu 4</p>
                     </div>
                     <div className="icons">
-                        <input type="text" name="search" placeholder="Search..."/>
+                        <input type="vex" name="search" placeholder="Search..."/>
                         <img src={require("../../../../img/twittericon.png")} alt="twitter"/>
                         <img src={require("../../../../img/facebookicon.png")} alt="facebook"/>
                         <img src={require("../../../../img/tumblricon.png")} alt="tumblr"/>

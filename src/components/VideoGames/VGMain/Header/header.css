@@ -117,7 +117,7 @@ replaced by just the links. */
         }
 }
 
-input[type=text] {
+input[type=vex] {
     overflow: hidden;
     height: 40px;
     width: 130px;
@@ -133,6 +133,6 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus {
+input[type=vex]:focus {
     width: 100%;
 }

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header/Header';
 import Sections from './Sections/Sections';
 import AllNews from './AllNews/AllNews';
+import Reviews from './Reviews/Reviews';
 import Footer from './Footer/Footer';
 import '../../../App.css';
 
@@ -14,7 +15,10 @@ export default class VGMain extends Component {
                 <img src={require("../../../img/ppvgmain.jpg")} alt="Video Game" className="pic"/>
                 </div>
                 <Sections/>
-                <AllNews/>
+                <div className="newsReviews">
+                    <AllNews/>
+                    <Reviews/>
+                </div>
                 <Footer/>
             </div>
         )
