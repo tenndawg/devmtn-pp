@@ -13,6 +13,7 @@ export default class VGMain extends Component {
                 <Header/>
                 <div className="appImg">
                 <img src={require("../../../img/ppvgmain.jpg")} alt="Video Game" className="pic"/>
+                <h1 className="HM">TENNDAWGS DEN</h1>
                 </div>
                 <Sections/>
                 <div className="newsReviews">

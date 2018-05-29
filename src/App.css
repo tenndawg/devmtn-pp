@@ -31,6 +31,12 @@
   height: 500px;
 }
 
+.HM {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+
 .newsReviews {
   display: flex;
   flex-direction: row;
@@ -41,4 +47,49 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Cantarell:400,700italic);
+
+.HM {
+  color: cyan;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 8em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 6px #FF001F;
+  -webkit-animation: hotline-miami 10s ease-out infinite;
+}
+
+@-webkit-keyframes hotline-miami {
+  
+  15% {
+    margin-left: 0;
+    text-shadow: none;
+  }
+  
+  45%, 55% {
+    margin-left: 1.25em;
+    -webkit-text-stroke: 6px #FFF;
+    text-shadow:
+    -4px 0 #fff,
+    -8px 0 #FFE6E9,
+    -12px 0 #FFD4DA,
+    -16px 0 #FCBCC5,
+    -20px 0 #FEA9B6,
+    -24px 0 #FC95A6,
+    -28px 0 #FF8297,
+    -32px 0 #FF738B,
+    -36px 0 #FF647E,
+    -40px 0 #FF516E,
+    -44px 0 #FF3F5F,
+    -48px 0 #FF2D50,
+    -52px 0 #FF2045,
+    -56px 0 #FC143A,
+    -60px 0 #FC0C34,
+    -64px 0 #FF001F;
+  }
+  
 }
