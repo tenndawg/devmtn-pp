@@ -43,10 +43,10 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-text-stroke: 6px #FF001F;
-  -webkit-animation: hotline-miami 10s ease-out infinite;
+  -webkit-animation: dope 10s ease-out infinite;
 }
 
-@-webkit-keyframes hotline-miami {
+@-webkit-keyframes dope {
   
   15% {
     margin-left: 0;
@@ -54,7 +54,7 @@
   }
   
   45%, 55% {
-    margin-left: 1.25em;
+    margin-left: 0;
     -webkit-text-stroke: 6px #000;
     text-shadow:
     -4px -4px #920000,
