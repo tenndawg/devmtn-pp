@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: center;
     align-items: center;
     height: 400px;
 }
@@ -17,8 +17,8 @@
 
 .container p {
     position: absolute;
-    left: 0;
-    top: 35%;
+    left: 5%;
+    top: 60%;
     width: 100%;
     text-align: center;
     font-size: 3em;
@@ -30,4 +30,48 @@
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Cantarell:400,700italic);
+
+.container {
+  color: cyan;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 6px #FF001F;
+  -webkit-animation: hotline-miami 10s ease-out infinite;
+}
+
+@-webkit-keyframes hotline-miami {
+  
+  15% {
+    margin-left: 0;
+    text-shadow: none;
+  }
+  
+  45%, 55% {
+    margin-left: 1.25em;
+    -webkit-text-stroke: 6px #000;
+    text-shadow:
+    -4px -4px #920000,
+    -8px -8px #C50D0D,
+    -12px -12px #C90F0F,
+    -16px -16px #CC0D0D,
+    -20px -20px #CF0D0D,
+    -24px -24px #D00000,
+    -28px -28px #D20000,
+    -32px -32px #D50000,
+    -36px -36px #D70000,
+    -40px -40px #DB0000,
+    -44px -44px #DC0000,
+    -48px -48px #DF0000,
+    -52px -52px #E10000,
+    -56px -56px #E90000,
+    -60px -60px #F50000,
+    -64px -64px #FF0000;
+  }
 }
