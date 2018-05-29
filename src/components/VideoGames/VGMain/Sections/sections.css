@@ -42,8 +42,8 @@
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 2px;
-  -webkit-text-stroke: 6px #FF001F;
-  -webkit-animation: dope 10s ease-out infinite;
+  -webkit-text-stroke: 3px #FFF;
+  -webkit-animation: dope 10s ease-in-out infinite;
 }
 
 @-webkit-keyframes dope {
@@ -55,23 +55,22 @@
   
   45%, 55% {
     margin-left: 0;
-    -webkit-text-stroke: 6px #000;
+    -webkit-text-stroke: 3px #000;
     text-shadow:
-    -4px -4px #920000,
-    -8px -8px #C50D0D,
-    -12px -12px #C90F0F,
-    -16px -16px #CC0D0D,
-    -20px -20px #CF0D0D,
-    -24px -24px #D00000,
-    -28px -28px #D20000,
-    -32px -32px #D50000,
-    -36px -36px #D70000,
-    -40px -40px #DB0000,
-    -44px -44px #DC0000,
-    -48px -48px #DF0000,
-    -52px -52px #E10000,
-    -56px -56px #E90000,
-    -60px -60px #F50000,
-    -64px -64px #FF0000;
+    -1px -1px #111,
+    -4px -4px #222,
+    -8px -8px #333,
+    -12px -12px #444,
+    -16px -16px #555,
+    -20px -20px #666,
+    -24px -24px #777,
+    -28px -28px #888,
+    -32px -32px #999,
+    -36px -36px #AAA,
+    -40px -40px #BBB,
+    -44px -44px #CCC,
+    -48px -48px #DDD,
+    -52px -52px #EEE,
+    -56px -56px #FFF;
   }
 }
