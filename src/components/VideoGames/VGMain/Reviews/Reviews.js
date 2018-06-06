@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./reviews.css";
 import axios from 'axios';
-import xmljs from 'xml-js';
 
 export default class Reviews extends Component {
     constructor(props) {
@@ -12,9 +11,11 @@ export default class Reviews extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://www.giantbomb.com/api/reviews/?api_key=bde2c74b073b6e604c3e1d5d0b056972f6f6ad22&limit=10&sort=publish_date:desc',{
-            params: { count: this.props.results || 10 }
-        })
+        var config = {
+            headers: {'Access-Control-Allow-Origin': 'false', 'user-key': '5d8640d4b2b7b28d5ea1a4daef19b148', 'Accept': 'application/jsonp'}
+        };
+        axios.get('https://api-2445582011268.apicast.io/reviews/', config   
+        )
         .then(res => {   
             this.setState({
                 bomb: res.data
@@ -35,7 +36,7 @@ export default class Reviews extends Component {
         var reviewItems = results.map((result) =>
             <li><div className="titles"><b>{result.review.name}</b></div><br/> <div className="description">{result.review.description}</div><br/></li>
         );
-
+        console.log(this.state.bomb);
         return(
             <div>
                 <div className="reviews">

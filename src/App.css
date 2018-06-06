@@ -74,22 +74,22 @@
     margin-left: 1.25em;
     -webkit-text-stroke: 6px #FFF;
     text-shadow:
-    -4px 0 #fff,
-    -8px 0 #FFE6E9,
-    -12px 0 #FFD4DA,
-    -16px 0 #FCBCC5,
-    -20px 0 #FEA9B6,
-    -24px 0 #FC95A6,
-    -28px 0 #FF8297,
-    -32px 0 #FF738B,
-    -36px 0 #FF647E,
-    -40px 0 #FF516E,
-    -44px 0 #FF3F5F,
-    -48px 0 #FF2D50,
-    -52px 0 #FF2045,
-    -56px 0 #FC143A,
-    -60px 0 #FC0C34,
-    -64px 0 #FF001F;
+    -4px 0px #fff,
+    -8px -2px #FFE6E9,
+    -12px -4px #FFD4DA,
+    -16px -8px #FCBCC5,
+    -20px -10px #FEA9B6,
+    -24px -12px #FC95A6,
+    -28px -14px #FF8297,
+    -32px -16px #FF738B,
+    -36px -18px #FF647E,
+    -40px -20px #FF516E,
+    -44px -22px #FF3F5F,
+    -48px -24px #FF2D50,
+    -52px -26px #FF2045,
+    -56px -28px #FC143A,
+    -60px -30px #FC0C34,
+    -64px -32px #FF001F;
   }
   
 }
