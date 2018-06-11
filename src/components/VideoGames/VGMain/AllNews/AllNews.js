@@ -32,13 +32,14 @@ export default class AllNews extends Component {
         var articles = this.state.ignAPI.articles;
         console.log(articles);
         var listItems = articles.map((article) =>
-            <li><a href={article.url} target="_blank"><img src={article.urlToImage} alt='Poster'/><br/> <div className="titles"><b>{article.title}</b></div></a><br/> <div className="description">{article.description}</div><br/></li>
+            <span key={article.title}><li><a href={article.url} target="_blank"><img src={article.urlToImage} alt='Poster'/><br/> <div className="titles"><b>{article.title}</b></div></a><br/> <div className="description">{article.description}</div><br/></li></span>
         );
 
         return(
             <div className="main">
                 <div className="news">
-                    <h1>Latest News</h1>{listItems}
+                    <h1>Latest News</h1>
+                    {listItems}
                 </div>
             </div>
         )
