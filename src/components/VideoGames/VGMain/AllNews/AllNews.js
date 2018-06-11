@@ -30,6 +30,7 @@ export default class AllNews extends Component {
         if (this.state.requestFailed) return <p>Failed!</p>
         if (!this.state.ignAPI) return <p>Loading...</p>
         var articles = this.state.ignAPI.articles;
+        console.log(articles);
         var listItems = articles.map((article) =>
             <li><a href={article.url} target="_blank"><img src={article.urlToImage} alt='Poster'/><br/> <div className="titles"><b>{article.title}</b></div></a><br/> <div className="description">{article.description}</div><br/></li>
         );
