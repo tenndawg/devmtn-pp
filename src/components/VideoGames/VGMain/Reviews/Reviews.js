@@ -34,13 +34,19 @@ export default class Reviews extends Component {
     render() {
         if (this.state.requestFailed) return <p>Failed!</p>
         if (!this.state.bomb) return <p>Loading...</p>
-        var convert = require('xml-js');
+        // var convert = require('xml-js');
+        // var xml = this.state.bomb;
+        // var options = {ignoreComment: true, compact: true, cdataKey: Math.random()}
+        // var response1 = convert.xml2js(xml, options);
+        // console.log(response1.response.results.review);
+        var parseString = require('xml2js').parseString;
         var xml = this.state.bomb;
-        var options = {ignoreComment: true, compact: true, cdataKey: Math.random()}
-        var response1 = convert.xml2js(xml, options);
-        console.log(response1.response.results.review);
-        var reviewItems = response1.response.results.review.map((result) =>
-            <li><div className="titles"><b>{result.game.name}</b></div><br/> <div className="description">{result.description}</div><br/></li>
+        const blarg = parseString(xml, function (err, result) {
+            return result;
+        });
+        console.log(blarg);
+        var reviewItems = blarg.response.results.review.map((output) =>
+            <li><div className="titles"><b>{output.game.name}</b></div><br/> <div className="description">{output.description}</div><br/></li>
         );
         console.log(reviewItems);
         return(
