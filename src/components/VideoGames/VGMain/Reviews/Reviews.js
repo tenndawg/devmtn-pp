@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./reviews.css";
 import axios from 'axios';
+import xmlToJSON from 'xmltojson';
 
 export default class Reviews extends Component {
     constructor(props) {
@@ -39,20 +40,31 @@ export default class Reviews extends Component {
         // var options = {ignoreComment: true, compact: true, cdataKey: Math.random()}
         // var response1 = convert.xml2js(xml, options);
         // console.log(response1.response.results.review);
+
         var parseString = require('xml2js').parseString;
         var xml = this.state.bomb;
-        const blarg = parseString(xml, function (err, result) {
-            return result;
-        });
-        console.log(blarg);
-        var reviewItems = blarg.response.results.review.map((output) =>
-            <li><div className="titles"><b>{output.game.name}</b></div><br/> <div className="description">{output.description}</div><br/></li>
+        var blarg = parseString(xml, function (err, result) {
+            console.dir(result.response.results);
+            var yuke = JSON.stringify(result);
+            console.log(yuke);
+            var noClue = JSON.parse(yuke);
+            console.dir(noClue.response.results);
+            var reviewItems = noClue.response.results.map((output) =>
+            <li><div className="titles"><b>{output.game['name']}</b></div><br/> <div className="description">{output.description}</div><br/></li>
         );
-        console.log(reviewItems);
+            return reviewItems;
+        });
+
+        // var xml = this.state.bomb;
+        // var blarg = xmlToJSON.parseString(xml);
+        // var reviewItems = result.map((output) =>
+        //     <li><div className="titles"><b>{output.game.name}</b></div><br/> <div className="description">{output.description}</div><br/></li>
+        // );
+        // console.log(reviewItems);
         return(
             <div>
                 <div className="reviews">
-                    <h1>Latest Reviews</h1>{reviewItems}
+                    <h1>Latest Reviews</h1>{blarg}
                 </div>
             </div>
         )
