@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./header.css";
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
     
@@ -17,7 +18,9 @@ export default class Header extends Component {
             <nav>
                 <div className="menu">
                     <div className="siteName">
-                        <img src={require("../../../../img/tdgames.jpg")} alt="TennDawg's Den"/>
+                        <Link to="/VGMain">
+                            <img src={require("../../../../img/tdgames.jpg")} alt="TennDawg's Den"/>
+                        </Link>
                     </div>
                     <div className="menuList">
                         <p>Menu 1</p>

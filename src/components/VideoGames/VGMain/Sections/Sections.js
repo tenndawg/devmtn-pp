@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./sections.css";
+import { Link } from 'react-router-dom';
 
 export default class Sections extends Component {
     render() {
@@ -7,7 +8,9 @@ export default class Sections extends Component {
             <div>
                 <div className="boxes">
                     <div className="container">
-                        <a href="localhost:3000/#/xbox"><img src={require("../../../../img/xbox.png")} alt="Xbox"/><p>Xbox</p></a>
+                        <Link to={`/Xbox`}>
+                            <a href="localhost:3000/#/xbox"><img src={require("../../../../img/xbox.png")} alt="Xbox"/><p>Xbox</p></a>
+                        </Link>
                     </div>
                     <div className="container">
                         <a href="localhost:3000/#/ps"><img src={require("../../../../img/ps.png")} alt="Playstation"/><p>Playstation</p></a>

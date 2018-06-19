@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import VGMain from './components/VideoGames/VGMain/VGMain';
 import SportsMain from './components/Sports/SportsMain/SportsMain';
+import Xbox from './components/VideoGames/SubPages/Xbox';
 
 class App extends Component {
   render() {
@@ -11,8 +12,9 @@ class App extends Component {
         <Router>
         
           <Switch>
-            <Route path='/vgmain' exact={true} component={ VGMain } />
-            <Route path='/sportsmain' exact={true} component={ SportsMain } />
+            <Route path='/VGMain' exact={true} component={ VGMain } />
+              <Route path='/Xbox' component={ Xbox } />
+            <Route path='/SportsMain' exact={true} component={ SportsMain } />
           </Switch>
       
         </Router>
