@@ -30,9 +30,15 @@ export default class Header extends Component {
                     </div>
                     <div className="icons">
                         <input type="vex" name="search" placeholder="Search..."/>
-                        <img src={require("../../../../img/twittericon.png")} alt="twitter"/>
-                        <img src={require("../../../../img/facebookicon.png")} alt="facebook"/>
-                        <img src={require("../../../../img/tumblricon.png")} alt="tumblr"/>
+                        <a href="http://twitter.com/tenndawg" target="_blank">
+                            <img src={require("../../../../img/twittericon.png")} alt="twitter"/>
+                        </a>
+                        <a href="http://facebook.com/nickdastick" target="_blank">
+                            <img src={require("../../../../img/facebookicon.png")} alt="facebook"/>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src={require("../../../../img/tumblricon.png")} alt="tumblr"/>
+                        </a>
                     </div>
                 </div>
                 <div className="navNarrow">
