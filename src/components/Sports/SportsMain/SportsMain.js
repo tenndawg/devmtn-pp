@@ -16,7 +16,7 @@ export default class SportsMain extends Component {
         return (
             <div>
                 <Header2/>
-                <Boxes mainBlock={NFL} quad1={NBA} quad2={NHL} quad3={MLB} quad4={MLS} />
+                <Boxes mainBlock={NFL} title1="NFL" quad1={NBA} title2="NBA" quad2={NHL} title3="NHL" quad3={MLB} title4="MLB" quad4={MLS} title5="MLS" />
                 <AllNews2/>
             </div>
         )

@@ -9,23 +9,23 @@ export default class Boxes extends Component {
                 <div className="boxesMain">
                     <div className="nfl">
                         <img src={this.props.mainBlock}/>
-                        <p>NFL</p>
+                        <p>{this.props.title1}</p>
                     </div>
                     <div className="quad1">
                         <img src={this.props.quad1}/>
-                        <p>NBA</p>
+                        <p>{this.props.title2}</p>
                     </div>
                     <div className="quad2">
                         <img src={this.props.quad2}/>
-                        <p>NHL</p>
+                        <p>{this.props.title3}</p>
                     </div>
                     <div className="quad3">
                         <img src={this.props.quad3}/>
-                        <p>MLB</p>
+                        <p>{this.props.title4}</p>
                     </div>
                     <div className="quad4">
                         <img src={this.props.quad4}/>
-                        <p>MLS</p>
+                        <p>{this.props.title5}</p>
                     </div>
                 </div>
             </div>
