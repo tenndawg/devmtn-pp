@@ -28,6 +28,10 @@
     -webkit-text-stroke: 3px #FFF;
 }
 
+.container:hover img {
+    opacity: .4;
+}
+
 .container {
     display: flex;
     justify-content: center;
