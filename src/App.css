@@ -35,6 +35,14 @@
   position: absolute;
   top: 25%;
   left: 8%;
+  color: cyan;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 8em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 6px #FF001F;
 }
 
 .newsReviews {
@@ -51,7 +59,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Cantarell:400,700italic);
 
-.HM {
+.HM:hover {
   color: cyan;
   font-family: 'Cantarell', sans-serif;
   font-size: 8em;
