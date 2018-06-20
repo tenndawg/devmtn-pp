@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../VGMain/Header/Header';
 import Boxes from '../../Sports/SportsMain/Boxes/Boxes';
 import AllNews from '../VGMain/AllNews/AllNews';
+import Reviews from '../VGMain/Reviews/Reviews';
 import './xbox.css';
 import axios from 'axios';
 
@@ -51,9 +52,16 @@ export default class Xbox extends Component {
                     <img src={require("../../../img/xboxlogo.jpg")} alt="Video Game" className="pic"/>
                 </div>
                 <div className="boxStyle">
-                    <Boxes mainBlock={block1} title1={articles[0].title} quad1={block2} title2={articles[1].title} quad2={block3} title3={articles[2].title} quad3={block4} title4={articles[3].title} quad4={block5} title5={articles[4].title} />
+                    <Boxes mainBlock={block1} title1={articles[0].source.name} link1={articles[0].url}
+                     quad1={block2} title2={articles[1].source.name} link2={articles[1].url}
+                     quad2={block3} title3={articles[2].source.name} link3={articles[2].url}
+                     quad3={block4} title4={articles[3].source.name} link4={articles[3].url}
+                     quad4={block5} title5={articles[4].source.name} link5={articles[4].url} />
                 </div>
-                <AllNews />
+                <div className="newsReviews">
+                    <AllNews />
+                    <Reviews />
+                </div>
             </div>
         )
     }

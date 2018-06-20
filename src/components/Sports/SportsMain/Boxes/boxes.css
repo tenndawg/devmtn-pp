@@ -20,7 +20,7 @@
 .nfl {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 100%;
     width: 40%;
     border-right: solid;
@@ -46,10 +46,11 @@
     width: 100%;
 }
 
+
 .quad1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 50%;
     width: 30%;
     border-bottom: solid;
@@ -81,7 +82,7 @@
 .quad2 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 50%;
     width: 30%;
     border-right: solid;
@@ -113,7 +114,7 @@
 .quad3 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 50%;
     width: 30%;
     border-left: solid;
@@ -145,7 +146,7 @@
 .quad4 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 50%;
     width: 30%;
     border-top: solid;
