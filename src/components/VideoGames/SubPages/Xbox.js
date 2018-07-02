@@ -49,7 +49,7 @@ export default class Xbox extends Component {
             <div>
                 <Header />
                 <div className="appImg">
-                    <img src={require("../../../img/xboxlogo.jpg")} alt="Video Game" className="pic"/>
+                    <img src={require("../../../img/xboxlogo.jpg")} alt="Video Game" className="picMain"/>
                 </div>
                 <div className="boxStyle">
                     <Boxes mainBlock={block1} title1={articles[0].source.name} link1={articles[0].url} hover1={articles[0].title}

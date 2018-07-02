@@ -23,10 +23,18 @@ export default class Header extends Component {
                         </Link>
                     </div>
                     <div className="menuList">
-                        <p>Menu 1</p>
-                        <p>Menu 2</p>
-                        <p>Menu 3</p>
-                        <p>Menu 4</p>
+                        <Link to="/Playstation">
+                            <p>Playstation</p>
+                        </Link>
+                        <Link to="/PC">
+                            <p>PC</p>
+                        </Link>
+                        <Link to="/Nintendo">
+                            <p>Nintendo</p>
+                        </Link>
+                        <Link to="/SportsMain">
+                            <p>Sports</p>
+                        </Link>
                     </div>
                     <div className="icons">
                         <input type="vex" name="search" placeholder="Search..."/>

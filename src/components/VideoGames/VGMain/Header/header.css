@@ -10,11 +10,16 @@ nav p {
     /* border: 1px solid rgb(139, 139, 139); */
     padding: 20px 10px 10px 10px;
     background-color: rgb(180, 180, 180);
+    color: black;
 }
 
 nav p:hover {
     color: white;
     background-color: rgb(139, 139, 139);
+}
+
+nav a:hover {
+    text-decoration: none;
 }
 
 .menu {
