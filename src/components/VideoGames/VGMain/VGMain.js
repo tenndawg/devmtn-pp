@@ -9,9 +9,26 @@ import './vgmain.css';
 
 export default class VGMain extends Component {
     render() {
+
+        var firstLink = "/#/Xbox";
+        var firstItem = "Xbox";
+        var secondLink = "/#/Playstation";
+        var secondItem = "Playstation";
+        var thirdLink = "/#/PC";
+        var thirdItem = "PC";
+        var fourthLink = "/#/Nintendo";
+        var fourthItem = "Nintendo"
+        var fifthLink = "/#/SportsMain";
+        var fifthItem = "Sports";
+        
         return (
             <div>
-                <Header/>
+                <Header 
+                    menuLink1={firstLink} menu1={firstItem}
+                    menuLink2={secondLink} menu2={secondItem}
+                    menuLink3={thirdLink} menu3={thirdItem}
+                    menuLink4={fourthLink} menu4={fourthItem}
+                    menuLink5={fifthLink} menu5={fifthItem} />
                 <div className="appImg">
                     <img src={require("../../../img/ppvgmain.jpg")} alt="Video Game" className="pic"/>
                     <h1 className="HM">TENNDAWGS DEN</h1>

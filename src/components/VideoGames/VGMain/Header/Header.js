@@ -18,23 +18,26 @@ export default class Header extends Component {
             <nav>
                 <div className="menu">
                     <div className="siteName">
-                        <Link to="/VGMain">
+                        <a href="/VGMain">
                             <img src={require("../../../../img/tdgames.jpg")} alt="TennDawg's Den"/>
-                        </Link>
+                        </a>
                     </div>
                     <div className="menuList">
-                        <Link to="/Playstation">
-                            <p>Playstation</p>
-                        </Link>
-                        <Link to="/PC">
-                            <p>PC</p>
-                        </Link>
-                        <Link to="/Nintendo">
-                            <p>Nintendo</p>
-                        </Link>
-                        <Link to="/SportsMain">
-                            <p>Sports</p>
-                        </Link>
+                        <a href={this.props.menuLink1}>
+                            <p>{this.props.menu1}</p>
+                        </a>
+                        <a href={this.props.menuLink2}>
+                            <p>{this.props.menu2}</p>
+                        </a>
+                        <a href={this.props.menuLink3}>
+                            <p>{this.props.menu3}</p>
+                        </a>
+                        <a href={this.props.menuLink4}>
+                            <p>{this.props.menu4}</p>
+                        </a>
+                        <a href={this.props.menuLink5}>
+                            <p>{this.props.menu5}</p>
+                        </a>
                     </div>
                     <div className="icons">
                         <input type="vex" name="search" placeholder="Search..."/>

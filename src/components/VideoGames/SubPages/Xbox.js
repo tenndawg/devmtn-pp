@@ -45,9 +45,18 @@ export default class Xbox extends Component {
         var block4 = articles[3].urlToImage;
         var block5 = articles[4].urlToImage;
 
+        var firstLink = "/#/Playstation";
+        var firstItem = "Playstation";
+        var secondLink = "/#/PC";
+        var secondItem = "PC";
+        var thirdLink = "/#/Nintendo";
+        var thirdItem = "Nintendo";
+
         return (
             <div>
-                <Header />
+                <Header menuLink1={firstLink} menu1={firstItem}
+                    menuLink2={secondLink} menu2={secondItem}
+                    menuLink3={thirdLink} menu3={thirdItem} />
                 <div className="appImg">
                     <img src={require("../../../img/xboxlogo.jpg")} alt="Video Game" className="picMain"/>
                 </div>
