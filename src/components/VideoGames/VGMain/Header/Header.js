@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./header.css";
-import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
     
@@ -18,7 +17,7 @@ export default class Header extends Component {
             <nav>
                 <div className="menu">
                     <div className="siteName">
-                        <a href="/VGMain">
+                        <a href="/#/VGMain">
                             <img src={require("../../../../img/tdgames.jpg")} alt="TennDawg's Den"/>
                         </a>
                     </div>
