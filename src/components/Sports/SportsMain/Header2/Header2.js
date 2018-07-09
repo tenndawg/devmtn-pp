@@ -44,16 +44,18 @@ export default class Header extends Component {
                     </div>
                 <div className="navmid2">
                     <div className="siteName2">
-                        <img src={require("../../../../img/TennDawgs.png")} alt="TennDawg's Den"/>
+                        <a href="/#/SportsMain"><img src={require("../../../../img/TennDawgs.png")} alt="TennDawg's Den"/></a>
                     </div>
                 </div>
                 <div className="navbot2">
                     <div className="menuList2">
-                        <p>Home</p>
-                        <p>Menu 1</p>
-                        <p>Menu 2</p>
-                        <p>Menu 3</p>
-                        <p>Menu 4</p>
+                        <a href="/#/SportsMain"><img src={require("../../../../img/homeicon.jpg")} alt="Home"/></a>
+                        <p>NFL</p>
+                        <p>NBA</p>
+                        <p>MLB</p>
+                        <p>NHL</p>
+                        <p>MLS</p>
+                        <a href="/#/VGMain"><p>Video Games</p></a>
                     </div>
                     <div className="search2">
                         <input type="text" name="search" placeholder="Search..."/>                        

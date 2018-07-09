@@ -110,8 +110,19 @@
     align-items: center;
     align-content: stretch;
     padding-bottom: 20px;
+    color: black;
     /* height: 40px; */
     /* padding: 5px 10px; */
+}
+
+.menuList2 a:hover {
+    text-decoration: none;
+}
+
+.menuList2 img {
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px 15px 0px;    
 }
 
 .icons2 {
