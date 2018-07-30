@@ -39,6 +39,7 @@ export default class VGMain extends Component {
                     <Reviews/>
                 </div>
                 <Footer/>
+                <img src={require("../../../img/gtavcover.jpg")} alt="GTAV"/>
             </div>
         )
     }
