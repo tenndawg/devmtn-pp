@@ -16,10 +16,10 @@ class App extends Component {
         
           <Switch>
             <Route path='/VGMain' exact={true} component={ VGMain } />
-              <Route path='/Xbox' component={ Xbox } />
-              <Route path='/Playstation' component={ Playstation } />
-              <Route path='/PC' component={ PC } />
-              <Route path='/Nintendo' component={ Nintendo } />
+            <Route path='/Xbox' component={ Xbox } />
+            <Route path='/Playstation' component={ Playstation } />
+            <Route path='/PC' component={ PC } />
+            <Route path='/Nintendo' component={ Nintendo } />
             <Route path='/SportsMain' exact={true} component={ SportsMain } />
           </Switch>
       
